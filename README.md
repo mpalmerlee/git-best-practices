@@ -1,4 +1,5 @@
 [Home GH Page](https://mpalmerlee.github.io/git-best-practices/)
+
 [Presentation](https://mpalmerlee.github.io/git-best-practices/presentation.html)
 
 ## Welcome to GitHub Pages
