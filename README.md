@@ -8,7 +8,7 @@ The Git log is a history of all changes who changed what files, when they made t
 
 ### Markdown
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+Markdown syntax:
 
 ```markdown
 Syntax highlighted code block
@@ -22,6 +22,7 @@ Syntax highlighted code block
 
 1. Numbered
 2. List
+3. Here
 
 **Bold** and _Italic_ and `Code` text
 
