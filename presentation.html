@@ -7,23 +7,68 @@ name: inverse
 layout: true
 class: inverse
 ---
+template: inverse
+
 # Git Best Practices
-## Keeping our history clean to easily see what happened and rollback when things go wrong
+
+### Keeping our history clean to easily see what happened and rollback when things go wrong
 
 ---
 
 # Agenda
 
-1. Best Practices from the Git purists
+1. Why should I care about keeping the history clean?
 --
-2. Best Practices for filthy casuals
+
+2. The Git purists guide to keeping the history clean
 --
-3. How we enforce these policies through GitHub
+
+3. How we can enforce these policies through GitHub
 
 ---
 
-# Introduction
+# Why should I care about keeping the history clean?
 
+## All my changes get into master no matter how I like to work with Git, so why should I care? What's useful about the log anyways?
+--
+
+- Easily find out what happened and why
+--
+
+- Cherry-Pick a feature or bug-fix across branches
+--
+
+- Rervert a change when something goes wrong
+
+---
+
+# Let's look at a few examples
+
+---
+
+# The Git purists guide to keeping the history clean
+
+- Each commit should represent a logical and functional set of changes
+--
+
+- _Usually_ this also means one commit per feature branch and pull request
+--
+
+- Avoid keeping merge commits in master since they don't contain useful information and just add noise
+---
+
+# That's nice, but I just wanna focus on coding, give me the TL;DR on how to do it
+
+- Keep one commit on your branch while rebasing with master
+
+--
+
+- Squash and merge
+
+---
+# How we can enforce these policies through GitHub
+
+---
 Hello world!
 
 
