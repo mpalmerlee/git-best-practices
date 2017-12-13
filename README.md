@@ -1,6 +1,6 @@
 [Home GH Page](https://mpalmerlee.github.io/git-best-practices/)
 
-[Presentation](https://mpalmerlee.github.io/git-best-practices/presentation.html)
+[Presentation](https://mpalmerlee.github.io/git-best-practices/presentation/)
 
 ## Welcome to GitHub Pages
 
