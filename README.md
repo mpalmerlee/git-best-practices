@@ -2,11 +2,9 @@
 
 [Presentation](https://mpalmerlee.github.io/git-best-practices/presentation/)
 
-## Welcome to GitHub Pages
+## Why should I care about the git history?
 
-You can use the [editor on GitHub](https://github.com/mpalmerlee/git-best-practices/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+The Git log is a history of all changes who changed what files, when they made the change and where they made it. 
 
 ### Markdown
 
@@ -32,10 +30,6 @@ Syntax highlighted code block
 
 For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
 
-### Jekyll Themes
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/mpalmerlee/git-best-practices/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+### Tech Used in this repo
+Built leveraging GitHub Pages and [Jekyll](https://jekyllrb.com/) with [Remark](https://github.com/gnab/remark) for the markdown powered presentation itself.
