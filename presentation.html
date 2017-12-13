@@ -12,6 +12,10 @@ template: inverse
 # Git Best Practices
 
 ### Keeping our history clean to easily see what happened and rollback when things go wrong
+--
+**According to Point Break characters**
+
+![Point Break Poster]({{ site.baseurl }}/img/pb-0.jpg)
 
 ---
 
@@ -65,6 +69,9 @@ template: inverse
 
 - Squash and merge
 
+- Merge with --ff-only option to avoid merge commits:
+`git merge master --ff-only
+fatal: Not possible to fast-forward, aborting.`
 ---
 # How we can enforce these policies through GitHub
 
