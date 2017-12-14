@@ -44,23 +44,15 @@ template: inverse
 
 <img src="{{ site.baseurl }}/img/pb-1.jpg" alt="Why should I care?" style="width: 500px;float: left; margin: 4px 10px 0px 0px;"/>
 > All my changes get into master no matter how I like to work with Git, so why should I care? What's useful about the log anyways?
-
+<br />
 
 --
-
-
-
-
 
 - Easily find out what happened and why
 --
 
-
-
 - Cherry-Pick a feature or bug-fix across branches
 --
-
-
 
 - Rervert a change when something goes wrong
 
@@ -92,35 +84,61 @@ template: inverse
 
 <img src="https://media.giphy.com/media/RyyThwc9bNneU/200.gif" alt="I am an F.B.I. Agent!" style="float: left; margin: 4px 10px 0px 0px;"/>
 > That's nice, but I just wanna focus on coding, give me the TL;DR on how to do it
-
-- Keep one commit on your branch while rebasing with master
-
+<br />
 --
 
-- Squash and merge
+- Keep one commit on your branch while rebasing with master
+`git commit --amend -a`
+or
+`git reset --soft HEAD~2`
+--
+
+and then
+`feature-branch> git rebase master`
+`feature-branch> git push -f`
+--
+
+---
+# Whoah! Did you just force push? 
+
+<img src="https://www.google.com/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&ved=0ahUKEwjF1O2N7YnYAhVU6mMKHfzIBbQQjRwIBw&url=https%3A%2F%2Fwww.the-fanboy-perspective.com%2Fthe-point-break-remake.html&psig=AOvVaw2fvsfQkxvEsRn63viWjggV&ust=1513352912959831" alt="I am an F.B.I. Agent!" style="float: left; margin: 4px 10px 0px 0px;"/>
+--
+## An alternate method: Squash and merge
+
+<img src="{{ site.baseurl }}/img/pr-merge-options.png" alt="merge options" style="width: 200px;float: left;"/>
+--
+
+<img src="{{ site.baseurl }}/img/squash-and-merge.png" alt="squash and merge" style="width: 200px;float: left; margin: 4px 10px 0px 0px;"/>
+--
+
+<img src="https://i.imgflip.com/212njr.jpg" title="terminal plz" style="width: 200px;float: left; margin: 4px 10px 0px 0px;"/>
+```bash
+git checkout master
+git merge --squash bugfix
+git commit
+```
+
+---
+# How we can all live in harmony at Bells Beach
+<img src="{{ site.baseurl }}/img/pb-3.png" alt="point break harmony" style="width: 200px;float: left; margin: 4px 10px 0px 0px;"/>
+### We can enforce these policies through GitHub
+<br />
+--
+<img src="{{ site.baseurl }}/img/settings-merge-button.png" alt="settings - merge button" style="width: 200px;float: left; margin: 4px 10px 0px 0px;"/>
+* Simply change the available options in the GitHub project settings / merge button *
+<br />
+--
+
+- Most of the time use *Squash and merge*
+--
+
+- When you want to keep your commits intact use *Rebase and merge*
+
+---
+# Summary / Other Tips
+
 
 - Merge with --ff-only option to avoid merge commits:
-`git merge master --ff-only
-fatal: Not possible to fast-forward, aborting.`
----
-# How we can enforce these policies through GitHub
+`git merge master --ff-only`
 
----
-Hello world!
-
-
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+`fatal: Not possible to fast-forward, aborting.`
