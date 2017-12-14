@@ -97,7 +97,7 @@ or
 
 and then:
 
-`feature-branch> git rebase master`
+`feature-branch> git rebase origin master`
 
 `feature-branch> git push -f`
 --
@@ -113,13 +113,17 @@ and then:
 --
 
 <img src="{{ site.baseurl }}/img/squash-and-merge.png" alt="squash and merge" style="width: 200px;float: left; margin: 4px 10px 0px 0px;"/>
---
+---
 
 <img src="https://i.imgflip.com/212njr.jpg" title="terminal plz" style="width: 200px;float: left; margin: 4px 10px 0px 0px;"/>
 ```bash
 git checkout master
 git merge --squash feature-branch
 git commit
+```
+
+```
+git rebase -i HEAD~2
 ```
 
 ---
