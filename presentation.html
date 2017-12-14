@@ -89,19 +89,23 @@ template: inverse
 
 - Keep one commit on your branch while rebasing with master
 `git commit --amend -a`
+
 or
+
 `git reset --soft HEAD~2`
 --
 
-and then
+and then:
+
 `feature-branch> git rebase master`
+
 `feature-branch> git push -f`
 --
 
 ---
 # Whoah! Did you just force push? 
 
-<img src="https://www.google.com/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&ved=0ahUKEwjF1O2N7YnYAhVU6mMKHfzIBbQQjRwIBw&url=https%3A%2F%2Fwww.the-fanboy-perspective.com%2Fthe-point-break-remake.html&psig=AOvVaw2fvsfQkxvEsRn63viWjggV&ust=1513352912959831" alt="I am an F.B.I. Agent!" style="float: left; margin: 4px 10px 0px 0px;"/>
+<img src="https://www.the-fanboy-perspective.com/uploads/1/7/3/8/17382151/9571402_orig.gif" alt="I am an F.B.I. Agent!" style="float: left; margin: 4px 10px 0px 0px;"/>
 --
 ## An alternate method: Squash and merge
 
