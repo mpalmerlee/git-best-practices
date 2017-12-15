@@ -27,11 +27,15 @@ How to prevent anarchy within your Git history while allowing the FBI agents and
 --
 
 
-2. I am an F.B.I. agent!
+2. The Surfer's code
 --
 
 
-3. How we can all live in harmony at Bells Beach
+3. The F.B.I. handbook
+--
+
+
+4. How we can all live in harmony at Bells Beach
 
 ---
 
@@ -69,8 +73,8 @@ How to prevent anarchy within your Git history while allowing the FBI agents and
 ---
 
 # Bodhi's guide to keeping the history clean
+<img src="{{ site.baseurl }}/img/pb-2.jpg" alt="squash and merge"/>
 
-<img src="https://i.imgflip.com/211uxd.jpg" title="rebasing is the source man" style="width: 400px;"/>
 --
 
 - Each commit should represent a logical and functional set of changes
@@ -82,11 +86,12 @@ How to prevent anarchy within your Git history while allowing the FBI agents and
 - Avoid merge commits in master since they don't contain useful information and just add noise
 ---
 
-# I am an F.B.I. Agent!
+# The Surfer's code
 
-<img src="https://media.giphy.com/media/RyyThwc9bNneU/200.gif" alt="I am an F.B.I. Agent!" style="float: left; margin: 4px 10px 0px 0px;"/>
-> That's nice, but I just wanna focus on coding, give me the TL;DR on how to do it
+<img src="https://i.imgflip.com/211uxd.jpg" title="rebasing is the source man" style="width: 300px;" style="float: left; margin: 4px 10px 0px 0px;"/>
+> Bodhi likes to keep his feature branch as clean as possible (he also likes people to think he writes perfect code the first time)
 <br clear="all" />
+
 --
 
 Keep one commit on your branch while rebasing with master:
@@ -114,6 +119,15 @@ git push --force-with-lease
 # Whoah! Did you just force push? 
 
 <img src="https://www.the-fanboy-perspective.com/uploads/1/7/3/8/17382151/9571402_orig.gif" alt="I know man isn't it wild!" style="float: left; margin: 4px 10px 0px 0px;"/>
+--
+
+## On our feature branch it's _usually_ fine, but we use `--force-with-lease` instead of `-f` just to be safe
+
+---
+# The F.B.I. handbook
+
+<img src="https://media.giphy.com/media/RyyThwc9bNneU/200.gif" alt="I am an F.B.I. Agent!" style="float: left; margin: 4px 10px 0px 0px;"/>
+> According to the F.B.I. handbook agents should commit early and often, preserve the history on their branch and clean things up before merging with master
 <br clear="all" />
 --
 An alternate method: Squash and merge
@@ -131,6 +145,8 @@ git checkout master
 git merge --squash feature-branch
 git commit
 ```
+
+or
 
 ```bash
 git rebase -i HEAD~2
