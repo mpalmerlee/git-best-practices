@@ -89,31 +89,37 @@ template: inverse
 
 Keep one commit on your branch while rebasing with master:
 
-`git commit --amend -a`
+```bash
+git commit --amend -a
+```
 
 or
 
-`git reset HEAD~1`
+```bash
+git reset HEAD~1
+```
 
 --
 
 and then:
 
-`git rebase origin master`
-
-`git push --force-with-lease`
+```bash
+git rebase origin master
+git push --force-with-lease
+```
 
 ---
 # Whoah! Did you just force push? 
 
 <img src="https://www.the-fanboy-perspective.com/uploads/1/7/3/8/17382151/9571402_orig.gif" alt="I know man isn't it wild!" style="float: left; margin: 4px 10px 0px 0px;"/>
+<br clear="all" />
 --
 ## An alternate method: Squash and merge
 
-<img src="{{ site.baseurl }}/img/pr-merge-options.png" alt="merge options" style="width: 200px;float: left;"/>
+<img src="{{ site.baseurl }}/img/pr-merge-options.png" alt="merge options" style="width: 400px;"/>
 --
 
-<img src="{{ site.baseurl }}/img/squash-and-merge.png" alt="squash and merge" style="width: 200px;float: left; margin: 4px 10px 0px 0px;"/>
+<img src="{{ site.baseurl }}/img/squash-and-merge.png" alt="squash and merge" style="width: 400px;"/>
 ---
 
 <img src="https://i.imgflip.com/212njr.jpg" title="terminal plz" style="width: 200px;float: left; margin: 4px 10px 0px 0px;"/>
@@ -123,7 +129,7 @@ git merge --squash feature-branch
 git commit
 ```
 
-```
+```bash
 git rebase -i HEAD~2
 ```
 
