@@ -54,7 +54,7 @@ template: inverse
 - Cherry-Pick a feature or bug-fix across branches
 --
 
-- Rervert a change when something goes wrong
+- Revert a change when something goes wrong
 
 ---
 
@@ -87,20 +87,21 @@ template: inverse
 <br clear="all" />
 --
 
-- Keep one commit on your branch while rebasing with master
+Keep one commit on your branch while rebasing with master:
+
 `git commit --amend -a`
 
 or
 
 `git reset HEAD~1`
+
 --
 
 and then:
 
-`feature-branch> git rebase origin master`
+`git rebase origin master`
 
-`feature-branch> git push --force-with-lease`
---
+`git push --force-with-lease`
 
 ---
 # Whoah! Did you just force push? 
