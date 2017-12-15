@@ -68,11 +68,27 @@ How to prevent anarchy within your Git history while allowing the FBI agents and
 
 ---
 
-# Let's look at a few examples
+# A clean master branch
+<img src="{{ site.baseurl }}/img/clean-history.png" alt="clean history" />
+--
 
-<img src="https://i.imgflip.com/211u9v.jpg" title="we love merge commits"/>
-<img src="{{ site.baseurl }}/img/merge-graph.png" alt="merge graph" style="width: 50px;float: left; margin: 4px 10px 0px 0px;"/>
+<img src="https://uproxx.files.wordpress.com/2015/06/point-break.gif" title="riding the pipe"/>
+
+Makes things peaceful and easy
+
+---
+# Merging between branches causes clutter
+
 <img src="{{ site.baseurl }}/img/history-with-merge-commits.png" alt="history with merge commits" style="width: 500px;float: left; margin: 4px 10px 0px 0px;"/>
+
+---
+# Avoid the 'Rockband' Graph
+
+<img src="{{ site.baseurl }}/img/merge-graph.png" alt="merge graph" style="width: 50px;float: left; margin: 4px 10px 0px 0px;"/>
+<img src="{{ site.baseurl }}/img/merge-graph-2.png" alt="merge graph" style="width: 50px;float: left; margin: 4px 10px 0px 0px;"/>
+
+<br clear="all" />
+<img src="https://i.imgflip.com/211u9v.jpg" title="we love merge commits"/>
 
 ---
 
@@ -174,11 +190,31 @@ git rebase -i HEAD~2
 - When you want to keep your commits intact use *Rebase and merge*
 
 ---
-# Summary / Other Tips
+# Summary
 
-<img src="{{ site.baseurl }}/img/pb-3.jpg" alt="point break harmony" style="width: 200px;float: left; margin: 4px 10px 0px 0px;"/>
+<img src="{{ site.baseurl }}/img/pb-3.jpg" alt="point break harmony" style="width: 200px; margin: 4px 10px 0px 0px;"/>
 
-- Merge with --ff-only option to avoid merge commits:
+- Avoid merge commits:
+Merge with --ff-only option to 
 `git merge master --ff-only`
 
 `fatal: Not possible to fast-forward, aborting.`
+--
+
+- Merge into master as soon as possible (small prs)
+--
+
+- Rebase as often as possible
+--
+
+- Commit messages are for future you, not present you
+
+---
+# Appendix / Reference
+
+> “Git gets better with good habits” - A wise man
+
+> “Silly robot, Git is for humans” - Another wise man
+
+[Flight Rules for Git](https://github.com/k88hudson/git-flight-rules)
+
