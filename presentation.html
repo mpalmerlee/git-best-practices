@@ -92,20 +92,20 @@ template: inverse
 
 or
 
-`git reset --soft HEAD~2`
+`git reset HEAD~1`
 --
 
 and then:
 
 `feature-branch> git rebase origin master`
 
-`feature-branch> git push -f`
+`feature-branch> git push --force-with-lease`
 --
 
 ---
 # Whoah! Did you just force push? 
 
-<img src="https://www.the-fanboy-perspective.com/uploads/1/7/3/8/17382151/9571402_orig.gif" alt="I am an F.B.I. Agent!" style="float: left; margin: 4px 10px 0px 0px;"/>
+<img src="https://www.the-fanboy-perspective.com/uploads/1/7/3/8/17382151/9571402_orig.gif" alt="I know man isn't it wild!" style="float: left; margin: 4px 10px 0px 0px;"/>
 --
 ## An alternate method: Squash and merge
 
@@ -128,7 +128,7 @@ git rebase -i HEAD~2
 
 ---
 # How we can all live in harmony at Bells Beach
-<img src="{{ site.baseurl }}/img/pb-3.png" alt="point break harmony" style="width: 200px;float: left; margin: 4px 10px 0px 0px;"/>
+<img src="{{ site.baseurl }}/img/pb-3.jpg" alt="point break harmony" style="width: 200px;float: left; margin: 4px 10px 0px 0px;"/>
 ### We can enforce these policies through GitHub
 <br clear="all" />
 --
