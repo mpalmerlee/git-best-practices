@@ -192,10 +192,11 @@ git rebase -i HEAD~2
 ### We can enforce these policies through GitHub
 <br clear="all" />
 --
+Navigate to your GitHub project settings -> Merge button section
+<img src="{{ site.baseurl }}/img/settings-merge-button.png" alt="settings - merge button" style="width: 300px;"/>
+--
+Uncheck the first option: "Allow Merge Commits"
 
-<img src="{{ site.baseurl }}/img/settings-merge-button.png" alt="settings - merge button" style="width: 200px;float: left; margin: 4px 10px 0px 0px;"/>
-* Simply change the available options in the GitHub project settings / merge button *
-<br clear="all" />
 --
 
 - Most of the time use *Squash and merge*
@@ -222,7 +223,8 @@ git rebase -i HEAD~2
 # Other Tips
 
 --
-Merge with --ff-only option to avoid merge commits
+- Merge with --ff-only option to avoid merge commits:
+
 `git merge master --ff-only`
 
 --
@@ -234,6 +236,7 @@ Merge with --ff-only option to avoid merge commits
 --
 
 - Commit messages are for future you, not present you
+<br clear="all" />
 --
 
 > “Git gets better with good habits” - A wise man
