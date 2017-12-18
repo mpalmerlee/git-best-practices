@@ -9,22 +9,22 @@ class: inverse
 ---
 template: inverse
 
-# Git Point Break
+# Point Git Break
 
+--
+
+How to prevent anarchy within your Git history while allowing the FBI agents and Surfers to live in harmony
 --
 
 <img src="{{ site.baseurl }}/img/pb-0.jpg" alt="Point Break Poster" style="width: 200px;float: left; margin: 4px 10px 0px 0px;"/>
 **Starring Patrick Swayze and Keanu Reeves**
 <br clear="all" />
---
-
-How to prevent anarchy within your Git history while allowing the FBI agents and Surfers to live in harmony
 
 ---
 
 # Agenda
 
-<img src="https://briantissot.files.wordpress.com/2016/04/point-break-movie-2015-ozaki-eight.jpg?w=640" alt="Point Break Wave" style=""/>
+<img src="https://briantissot.files.wordpress.com/2016/04/point-break-movie-2015-ozaki-eight.jpg?w=640" alt="Point Break Wave" style="with: 300px;"/>
 --
 
 1. Who cares Dude?
@@ -108,9 +108,8 @@ Makes things peaceful and easy
 
 # The Surfer's code
 
-<img src="https://i.imgflip.com/211uxd.jpg" title="rebasing is the source man" style="width: 300px;" style="float: left; margin: 4px 10px 0px 0px;"/>
+<img src="https://i.imgflip.com/211uxd.jpg" title="rebasing is the source man" style="width: 200px;" style="float: left; margin: 4px 10px 0px 0px;"/>
 Bodhi keeps his feature branch as clean as possible (he also wants people to think he writes perfect code the first time)
-
 --
 
 Keep one commit on your branch while rebasing with master:
@@ -194,11 +193,23 @@ git rebase -i HEAD~2
 
 <img src="{{ site.baseurl }}/img/pb-3.jpg" alt="point break harmony" style="width: 200px; margin: 4px 10px 0px 0px;"/>
 
-- Avoid merge commits:
-Merge with --ff-only option to 
+--
+
+- It doesn't matter how you like to work: like Bodhi or like Agent Utah we can achieve a clean git history
+--
+
+- Avoid putting merge commits on master to prevent the "Rockband" graph
+--
+
+- Respect the git history for your own sanity in the future
+
+---
+# Other Tips
+
+--
+Merge with --ff-only option to avoid merge commits
 `git merge master --ff-only`
 
-`fatal: Not possible to fast-forward, aborting.`
 --
 
 - Merge into master as soon as possible (small prs)
@@ -208,9 +219,7 @@ Merge with --ff-only option to
 --
 
 - Commit messages are for future you, not present you
-
----
-# Appendix / Reference
+--
 
 > “Git gets better with good habits” - A wise man
 
